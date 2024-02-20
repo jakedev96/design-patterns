@@ -3,7 +3,7 @@ export const array = [
   { id: 2, name: "Doe" },
   { id: 3, name: "Jane" },
   { id: 4, name: "Smith" },
-  { id: 5, name: "Jack" },
+  { id: 5, name: "Jake" },
   { id: 6, name: "Jill" },
   { id: 7, name: "Jen" },
   { id: 8, name: "Jenny" },

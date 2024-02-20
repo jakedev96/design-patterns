@@ -15,10 +15,19 @@ export class Iterator<T> {
   hasNext() {
     return this.index < this.collection.length;
   }
+
+  stopIteration() {
+    this.index = this.collection.length;
+  }
 }
 
 const iter = new Iterator(array);
 
 while (iter.hasNext()) {
-  console.log(iter.next());
+  const user = iter.next();
+  console.log(user);
+
+  if (user.name === "Jake") {
+    iter.stopIteration();
+  }
 }
