@@ -1,4 +1,4 @@
-import { array } from "../mock";
+import { array } from "../mock/index";
 
 export class Iterator<T> {
   private index = 0;
@@ -24,7 +24,7 @@ export class Iterator<T> {
 const iter = new Iterator(array);
 
 while (iter.hasNext()) {
-  const user = iter.next();
+  const user = iter.next() as any;
   console.log(user);
 
   if (user.name === "Jake") {
